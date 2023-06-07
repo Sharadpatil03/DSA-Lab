@@ -62,7 +62,7 @@ void BST::create()
         {
             root = insert(root, temp);
         }
-        cout << "want to insert again" << endl;
+        cout << "want to insert again Enter =1 " << endl;
         cout << "Enter -1 to terminate" << endl;
         cin >> c;
     } while (c != -1);
