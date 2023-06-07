@@ -59,7 +59,7 @@ return;
 }
 while(file){
 if(file.read((char*)&x,sizeof(x)))
-if(x.getsalary()>=10000 && x.getsalary()<=20000)
+
 x.display();
 }
 file.close();
@@ -83,7 +83,7 @@ isFound=1;
 break;
 }
 }
-} 
+}
 if(isFound==0){
 cout<<"Record not found!!!\n";
 }
@@ -154,7 +154,7 @@ char ch;
 deleteexistingfile();
 do{
 int n;
-cout << " Enter choice = " <<" 1. Add an employee " << "2. Display " << "3.Search " << "4.Increase salary"<<" 5. Insert record "<<endl;
+cout<<"ENTER CHOICE\n"<<"1.ADD AN EMPLOYEE\n"<<"2.DISPLAY\n"<<"3.SEARCH\n"<<"4.INCREASE SALARY\n"<<"5.INSERT RECORD\n";
 cout<<"Make a choice: ";
 cin>>n;
 switch(n){
@@ -176,7 +176,7 @@ break;
 default :
 cout<<"Invalid Choice\n";
 }
-cout<<"Do you want to continue ? :\n Enter y ";
+cout<<"Do you want to continue ? : ";
 cin>>ch;
 }while(ch=='Y'||ch=='y');
 return 0;
